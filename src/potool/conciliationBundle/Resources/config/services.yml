@@ -1,0 +1,7 @@
+parameters:
+#    potoolconciliation.example.class: potool\conciliationBundle\Example
+
+services:
+#    potoolconciliation.example:
+#        class: %potoolconciliation.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

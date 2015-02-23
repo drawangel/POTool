@@ -1,0 +1,4 @@
+potoolconciliation:
+    resource: "@potoolconciliationBundle/Resources/config/routing.yml"
+    prefix:   /
+
