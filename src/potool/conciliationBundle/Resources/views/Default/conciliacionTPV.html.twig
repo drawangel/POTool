@@ -1,0 +1,41 @@
+
+{% extends "theme.html.twig" %}
+{% block Title %}Conciliación TPV {% endblock %}
+
+
+{% block body %}
+    <div class="container theme-showcase" role="main">
+
+        <!-- Main jumbotron for a primary marketing message or call to action -->
+        <div class="jumbotron">
+            <h1>{{ title }}</h1>
+            <p>This is a template showcasing the optional theme stylesheet included in Bootstrap. Use it as a starting point to create something more unique by building on or modifying it.</p>
+        </div>
+
+
+
+        <div class="page-header">
+            <h1>Import Files</h1>
+            <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                    Select Country
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                    {% for country in countries %}
+                    <li role="presentation"><a role="menuitem" href="#">{{ country.countryName }}</a></li>
+
+                    {% endfor %}
+
+                </ul>
+            </div>
+
+        </div>
+    <p>  <button class="btn btn-success btn-large"><i class="fam-page-excel"></i> Import Excel</button> </p>
+
+    
+
+
+
+
+{% endblock %}

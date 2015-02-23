@@ -1,0 +1,19 @@
+potool\conciliationBundle\Entity\Country:
+    type: entity
+    table: country
+    fields:
+        countryPk:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            column: country_PK
+            generator:
+                strategy: IDENTITY
+        countryName:
+            type: string
+            length: 50
+            fixed: false
+            nullable: true
+            column: country_name
+    lifecycleCallbacks: {  }

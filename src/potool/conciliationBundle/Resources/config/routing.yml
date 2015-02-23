@@ -1,3 +1,6 @@
 potoolconciliation_homepage:
     pattern:  /hello/{name}
     defaults: { _controller: potoolconciliationBundle:Default:index }
+potoolconciliation_conciliacionTPV:
+    pattern:  /country/{country}
+    defaults: { _controller: potoolconciliationBundle:conciliacionTPV:index }
